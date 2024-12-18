@@ -3,7 +3,7 @@ import animationData from "@/assets/lottie/floating_coding.json";
 
 const About = () => {
   return (
-    <div className="mx-auto xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 lg:my-32 my-16 space-y-16">
+    <div className="mx-auto xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 lg:my-32 my-16 space-y-16 lg:space-y-10">
       <h1
         id="about-heading"
         className="text-white/80 font-gilmer-outlined lg:mb-10 mb-5 text-[3.5rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
