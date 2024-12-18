@@ -11,6 +11,9 @@ export default {
         "gilmer-heavy": ["Gilmer-Heavy", "sans-serif"],
         "gilmer-outlined": ["Gilmer-Outline", "sans-serif"],
       },
+      screens: {
+        vvs: "380px",
+      },
     },
   },
   plugins: [],

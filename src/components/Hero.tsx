@@ -2,7 +2,7 @@ import profilePic from "@/assets/profile_pic_512.webp";
 
 const Hero = () => {
   return (
-    <div className="vh-70 flex flex-col items-center justify-center">
+    <div className="vh-70 flex flex-col items-center justify-center xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10">
       <div className="flex justify-center">
         <img
           src={profilePic}
@@ -10,11 +10,11 @@ const Hero = () => {
           alt="Douglas Eduardo"
         />
       </div>
-      <p className="font-gilmer-medium my-6">
+      <p className="font-gilmer-medium cursor-default my-6 lg:text-lg">
         <span className="text-gradient">Hi, I'm Douglas</span> 👋
       </p>
       <div className="text-center">
-        <h1 className="font-gilmer-bold">
+        <h1 className="font-gilmer-bold cursor-default text-4xl vvs:text-5xl sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="font-gilmer-outlined">
             Developing Scalable, <br />
           </span>
