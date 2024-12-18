@@ -1,16 +1,14 @@
 import { AiOutlineFilePdf } from "react-icons/ai";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
+import DouglasResume from "@/assets/DouglasResume.pdf";
 
 const Header = () => {
   return (
     <div className="flex justify-center xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10">
       <div className="w-full flex items-center justify-between mt-8">
         <div className="flex items-center gap-x-4">
-          <a
-            href="/assets/DouglasResume.pdf"
-            download="/assets/DouglasResume.pdf"
-          >
+          <a href={DouglasResume} download={DouglasResume}>
             <button className="text-white rounded-full lg:w-fit hover:bg-[#242424] transition duration-500 ease-in-out font-gilmer-medium border-[1px] focus:outline-none flex items-center justify-center gap-x-1 border-white/50 py-2 px-4 text-sm sm:text-lg xl:text-xl 2xl:text-sm w-full">
               <AiOutlineFilePdf />
               <span>Download Resume</span>

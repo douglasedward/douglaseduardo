@@ -2,6 +2,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
+import DouglasResume from "@/assets/DouglasResume.pdf";
 
 const Contact = () => {
   return (
@@ -34,10 +35,7 @@ const Contact = () => {
             </a>
             .
           </p>
-          <a
-            href="/assets/DouglasResume.pdf"
-            download="/assets/DouglasResume.pdf"
-          >
+          <a href={DouglasResume} download={DouglasResume}>
             <button
               id="download-btn"
               className="text-white rounded-full lg:w-fit hover:bg-[#242424] transition duration-500 ease-in-out font-gilmer-bold border-[1px] focus:outline-none flex items-center justify-center gap-x-2 border-white/50 py-3 px-6 text-lg xl:text-xl 2xl:text-2xl my-10 w-full"
