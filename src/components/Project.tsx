@@ -9,7 +9,7 @@ import {
   SiPassport,
 } from "react-icons/si";
 import { GoArrowRight } from "react-icons/go";
-import spectrum from "@/assets/img/Spectrum.webp";
+import spectrum from "@/assets/img/spectrum.webp";
 
 const Project = () => {
   return (
