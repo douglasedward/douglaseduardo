@@ -3,8 +3,25 @@ import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 import DouglasResume from "@/assets/DouglasResume.pdf";
+import { mixpanel } from "@/lib/mixpanel";
 
 const Contact = () => {
+  const handleResumeDownloadClick = () => {
+    mixpanel.track("Resume Button Click", { component: "Contact" });
+  };
+  const handleEmailClick = () => {
+    mixpanel.track("Email Click", { component: "Contact" });
+  };
+  const handleLinkedinClick = (component: string) => {
+    mixpanel.track("Linkedin Click", { component });
+  };
+  const handleGithubClick = () => {
+    mixpanel.track("Github Click", { component: "Contact" });
+  };
+  const handleWhatsappClick = () => {
+    mixpanel.track("Whatsapp Click", { component: "Contact" });
+  };
+
   return (
     <div className="lg:mt-48 mt-24 bg-[#1a1a1a] rounded-t-[8rem] pt-24">
       <div className="xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 h-screen flex flex-col justify-between">
@@ -23,6 +40,7 @@ const Contact = () => {
               target="_blank"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
               rel="noreferrer"
+              onClick={() => handleLinkedinClick("Contact")}
             >
               LinkedIn
             </a>{" "}
@@ -30,12 +48,17 @@ const Contact = () => {
             <a
               href="mailto:douglaskyrius@gmail.com"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
+              onClick={handleEmailClick}
             >
               douglaskyrius@gmail.com
             </a>
             .
           </p>
-          <a href={DouglasResume} download={DouglasResume}>
+          <a
+            href={DouglasResume}
+            download={DouglasResume}
+            onClick={handleResumeDownloadClick}
+          >
             <button
               id="download-btn"
               className="text-white rounded-full lg:w-fit hover:bg-[#242424] transition duration-500 ease-in-out font-gilmer-bold border-[1px] focus:outline-none flex items-center justify-center gap-x-2 border-white/50 py-3 px-6 text-lg xl:text-xl 2xl:text-2xl my-10 w-full"
@@ -52,6 +75,7 @@ const Contact = () => {
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"
+              onClick={() => handleLinkedinClick("Footer")}
             >
               <SlSocialLinkedin className="h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10 transition duration-200 ease-in-out" />
             </a>
@@ -60,6 +84,7 @@ const Contact = () => {
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"
+              onClick={handleGithubClick}
             >
               <SiGithub className="h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10 transition duration-200 ease-in-out" />
             </a>
@@ -68,6 +93,7 @@ const Contact = () => {
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"
+              onClick={handleWhatsappClick}
             >
               <SiWhatsapp className="h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10 transition duration-200 ease-in-out" />
             </a>
