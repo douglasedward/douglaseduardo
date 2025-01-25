@@ -2,7 +2,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
-import DouglasResume from "@/assets/DouglasResume.pdf";
+import DouglasResume from "@/assets/DouglasSantos_Resume.pdf";
 import { mixpanel } from "@/lib/mixpanel";
 
 const Contact = () => {
@@ -80,7 +80,7 @@ const Contact = () => {
               <SlSocialLinkedin className="h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10 transition duration-200 ease-in-out" />
             </a>
             <a
-              href="https://github.com/DouglasKyrius"
+              href="https://github.com/douglasedward"
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"

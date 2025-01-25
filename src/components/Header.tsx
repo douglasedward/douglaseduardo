@@ -1,7 +1,7 @@
 import { AiOutlineFilePdf } from "react-icons/ai";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
-import DouglasResume from "@/assets/DouglasResume.pdf";
+import DouglasResume from "@/assets/DouglasSantos_Resume.pdf";
 import { mixpanel } from "@/lib/mixpanel";
 
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
               <SiLinkedin className="text-white" />
             </a>
             <a
-              href="https://github.com/DouglasKyrius"
+              href="https://github.com/douglasedward"
               target="_blank"
               rel="noreferrer"
               className="flex items-center justify-center flex-col text-lg transition-filter hover:drop-shadow-[0_0_1em_rgba(100,108,255,0.67)] duration-300 ease-in-out"
