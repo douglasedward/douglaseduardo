@@ -1,5 +1,6 @@
+import { logosLeft, logosRight } from "@/data/skills";
 import Header from "@/components/Header";
-import { CarouselLeft, CarouselRight } from "@/components/Carousel";
+import Carousel from "@/components/Carousel";
 import About from "@/components/About";
 import Project from "@/components/Project";
 import Hero from "@/components/Hero";
@@ -19,8 +20,8 @@ function App() {
       <Header />
       <Hero />
       <div className="mt-12">
-        <CarouselRight />
-        <CarouselLeft />
+        <Carousel direction="right" logos={logosRight} />
+        <Carousel direction="left" logos={logosLeft} />
       </div>
       <About />
       <Project />
