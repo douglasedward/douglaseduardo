@@ -2,7 +2,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
-import DouglasResume from "@/assets/DouglasSantos_Resume.pdf";
+import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
 import { mixpanel } from "@/lib/mixpanel";
 
 const Contact = () => {
