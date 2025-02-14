@@ -1,22 +1,27 @@
 import { FaAws, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
+  SiRabbitmq,
   SiTypescript,
   SiNodedotjs,
   SiJavascript,
   SiPython,
   SiNestjs,
   SiExpress,
+  SiElasticstack,
   SiDjango,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
-  SiElasticsearch,
   SiKubernetes,
   SiTerraform,
   SiGraphql,
+  SiApachekafka,
+  SiPrometheus,
+  SiGrafana,
 } from "react-icons/si";
+
 import { DiRedis } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -47,6 +52,13 @@ const logosRight = [
     description:
       "Popular programming language known for simplicity and versatility.",
     color: "#3776AB",
+  },
+  {
+    logo: FaGitAlt,
+    name: "Git",
+    description:
+      "Distributed version control system for tracking code changes.",
+    color: "#F05033",
   },
   {
     logo: SiNestjs,
@@ -94,6 +106,13 @@ const logosRight = [
     description: "Utility-first CSS framework for rapid UI development.",
     color: "#06B6D4",
   },
+  {
+    logo: SiGraphql,
+    name: "GraphQL",
+    description:
+      "Query language for APIs that enables clients to request only the data they need.",
+    color: "#E10098",
+  },
 ];
 
 const logosLeft = [
@@ -111,6 +130,20 @@ const logosLeft = [
     color: "#47A248",
   },
   {
+    logo: SiRabbitmq,
+    name: "RabbitMQ",
+    description:
+      "Open-source message broker for reliable, scalable messaging between applications.",
+    color: "#F26722",
+  },
+  {
+    logo: SiApachekafka,
+    name: "Kafka",
+    description:
+      "Distributed event streaming platform for building real-time data pipelines and streaming applications.",
+    color: "#D9D9D9",
+  },
+  {
     logo: DiRedis,
     name: "Redis",
     description:
@@ -118,10 +151,10 @@ const logosLeft = [
     color: "#DC382D",
   },
   {
-    logo: SiElasticsearch,
-    name: "Elasticsearch",
+    logo: SiElasticstack,
+    name: "ELK Stack",
     description:
-      "Search and analytics engine for distributed and fast querying.",
+      "A set of tools for searching, analyzing, and visualizing log data in real-time. Includes Elasticsearch, Logstash, and Kibana.",
     color: "#005571",
   },
   {
@@ -130,13 +163,6 @@ const logosLeft = [
     description:
       "Comprehensive cloud platform offering computing, storage, and more.",
     color: "#FF9900",
-  },
-  {
-    logo: FaGitAlt,
-    name: "Git",
-    description:
-      "Distributed version control system for tracking code changes.",
-    color: "#F05033",
   },
   {
     logo: FaDocker,
@@ -160,11 +186,18 @@ const logosLeft = [
     color: "#623CE4",
   },
   {
-    logo: SiGraphql,
-    name: "GraphQL",
+    logo: SiPrometheus,
+    name: "Prometheus",
     description:
-      "Query language for APIs that enables clients to request only the data they need.",
-    color: "#E10098",
+      "Open-source monitoring and alerting toolkit designed for reliability and scalability.",
+    color: "#E6522C",
+  },
+  {
+    logo: SiGrafana,
+    name: "Grafana",
+    description:
+      "Open-source platform for monitoring and observability, allowing for real-time analytics and visualization.",
+    color: "#F4F8FB",
   },
 ];
 

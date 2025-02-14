@@ -6,7 +6,7 @@ import "@/assets/css/Carousel.css";
 const logoRightItems = [...logosRight, ...logosRight];
 const logoLeftItems = [...logosLeft, ...logosLeft];
 
-const gap = 10;
+const gap = Number(10);
 
 export const CarouselRight: React.FC = () => {
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -51,7 +51,7 @@ export const CarouselRight: React.FC = () => {
     <>
       <div className="logo-carousel">
         <div ref={trackRef} className="carousel-track">
-          {logoRightItems.map(({ logo, description, name, color }, index) => {
+          {logoRightItems.map(({ color, description, logo, name }, index) => {
             return (
               <Skill
                 key={index}
