@@ -1,6 +1,6 @@
 import mixpanel from "mixpanel-browser";
 
-mixpanel.init("0667f700e0232aa0337fba4ac752ce6e", {
+mixpanel.init(import.meta.env.VITE_MIXPANEL_PROJECT_TOKEN, {
   ignore_dnt: true,
 });
 
