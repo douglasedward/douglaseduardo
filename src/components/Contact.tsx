@@ -2,25 +2,17 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
+import useTracking from "@/hooks/useTracking";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
-import { mixpanel } from "@/lib/mixpanel";
 
 const Contact = () => {
-  const handleResumeDownloadClick = () => {
-    mixpanel.track("Resume Button Click", { component: "Contact" });
-  };
-  const handleEmailClick = () => {
-    mixpanel.track("Email Click", { component: "Contact" });
-  };
-  const handleLinkedinClick = (component: string) => {
-    mixpanel.track("Linkedin Click", { component });
-  };
-  const handleGithubClick = () => {
-    mixpanel.track("Github Click", { component: "Contact" });
-  };
-  const handleWhatsappClick = () => {
-    mixpanel.track("Whatsapp Click", { component: "Contact" });
-  };
+  const { createTrackHandler } = useTracking("Contact");
+
+  const handleResumeDownloadClick = createTrackHandler("Resume Button Click");
+  const handleEmailClick = createTrackHandler("Email Click");
+  const handleLinkedinClick = createTrackHandler("Linkedin Click");
+  const handleGithubClick = createTrackHandler("Github Click");
+  const handleWhatsappClick = createTrackHandler("Whatsapp Click");
 
   return (
     <div className="lg:mt-48 mt-24 bg-[#1a1a1a] rounded-t-[8rem] pt-24">
@@ -40,7 +32,7 @@ const Contact = () => {
               target="_blank"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
               rel="noreferrer"
-              onClick={() => handleLinkedinClick("Contact")}
+              onClick={handleLinkedinClick}
             >
               LinkedIn
             </a>{" "}
@@ -75,7 +67,7 @@ const Contact = () => {
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"
-              onClick={() => handleLinkedinClick("Footer")}
+              onClick={handleLinkedinClick}
             >
               <SlSocialLinkedin className="h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10 transition duration-200 ease-in-out" />
             </a>

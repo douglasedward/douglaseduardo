@@ -2,21 +2,15 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
-import { mixpanel } from "@/lib/mixpanel";
+import useTracking from "@/hooks/useTracking";
 
 const Header = () => {
-  const handleResumeDownloadClick = () => {
-    mixpanel.track("Resume Button Click", { component: "Header" });
-  };
-  const handleLinkedinClick = () => {
-    mixpanel.track("Linkedin Click", { component: "Header" });
-  };
-  const handleGithubClick = () => {
-    mixpanel.track("Github Click", { component: "Header" });
-  };
-  const handleWhatsappClick = () => {
-    mixpanel.track("Whatsapp Click", { component: "Header" });
-  };
+  const { createTrackHandler } = useTracking("Header");
+
+  const handleResumeDownloadClick = createTrackHandler("Resume Button Click");
+  const handleLinkedinClick = createTrackHandler("Linkedin Click");
+  const handleGithubClick = createTrackHandler("Github Click");
+  const handleWhatsappClick = createTrackHandler("Whatsapp Click");
 
   return (
     <div className="flex justify-center xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10">

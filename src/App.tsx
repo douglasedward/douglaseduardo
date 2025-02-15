@@ -6,17 +6,20 @@ import Project from "@/components/Project";
 import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import { useEffect } from "react";
-import { mixpanel } from "@/lib/mixpanel";
+import useTracking from "@/hooks/useTracking";
+import { TrackingProvider } from "@/context/TrackingProvider";
 
 import "./App.css";
 
 function App() {
+  const { createTrackHandler } = useTracking("Home Page");
+
   useEffect(() => {
-    mixpanel.track("Page View", { page: "Home" });
-  }, []);
+    createTrackHandler("Page View")();
+  }, [createTrackHandler]);
 
   return (
-    <>
+    <TrackingProvider>
       <Header />
       <Hero />
       <div className="mt-12">
@@ -26,7 +29,7 @@ function App() {
       <About />
       <Project />
       <Contact />
-    </>
+    </TrackingProvider>
   );
 }
 
