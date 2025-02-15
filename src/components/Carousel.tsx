@@ -3,7 +3,7 @@ import { IconType } from "react-icons";
 import Skill from "./Skill";
 import "@/assets/css/Carousel.css";
 
-const gap = 10;
+const halfGap = 5;
 
 interface CarouselProps {
   direction: "left" | "right";
@@ -37,9 +37,9 @@ const Carousel: React.FC<CarouselProps> = ({ direction, logos }) => {
     const animate = () => {
       position -= positionDecreaseRate;
 
-      if (isRight)
-        if (position >= 0) position = -maxScrollWidth + gap;
-        else if (Math.abs(position) >= maxScrollWidth) position = gap;
+      if (isRight) {
+        if (position == 0) position = -(maxScrollWidth + halfGap);
+      } else if (Math.abs(position) >= maxScrollWidth) position = halfGap;
 
       trackElement.style.transform = `translateX(${position}px)`;
       animationFrameId = requestAnimationFrame(animate);
