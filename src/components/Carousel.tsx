@@ -22,8 +22,6 @@ const Carousel: React.FC<CarouselProps> = ({ direction, logos }) => {
   const isRight = direction === "right";
   const positionDecreaseRate = isRight ? -0.5 : 0.5;
 
-  const duplicatedLogos = [...logos, ...logos];
-
   useEffect(() => {
     const trackElement = trackRef.current;
     if (!trackElement) return;
@@ -50,24 +48,24 @@ const Carousel: React.FC<CarouselProps> = ({ direction, logos }) => {
     return () => cancelAnimationFrame(animationFrameId);
   }, [isRight, positionDecreaseRate]);
 
+  const items = [...logos, ...logos];
+
   return (
-    <>
-      <div className="logo-carousel">
-        <div ref={trackRef} className="carousel-track">
-          {duplicatedLogos.map(({ color, description, logo, name }, index) => {
-            return (
-              <Skill
-                key={index}
-                Logo={logo}
-                description={description}
-                name={name}
-                color={color}
-              />
-            );
-          })}
-        </div>
+    <div className="logo-carousel">
+      <div ref={trackRef} className="carousel-track">
+        {items.map(({ color, description, logo, name }, index) => {
+          return (
+            <Skill
+              key={index}
+              Logo={logo}
+              description={description}
+              name={name}
+              color={color}
+            />
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
 
