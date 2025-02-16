@@ -6,7 +6,7 @@ import Project from "@/components/Project";
 import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import { useEffect } from "react";
-import useTracking from "@/hooks/useTracking";
+import useTracking from "@/utils/hooks/useTracking";
 import { TrackingProvider } from "@/context/TrackingProvider";
 
 import "./App.css";

@@ -2,7 +2,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
-import useTracking from "@/hooks/useTracking";
+import useTracking from "@/utils/hooks/useTracking";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
 
 const Contact = () => {

@@ -2,7 +2,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
-import useTracking from "@/hooks/useTracking";
+import useTracking from "@/utils/hooks/useTracking";
 
 const Header = () => {
   const { createTrackHandler } = useTracking("Header");
