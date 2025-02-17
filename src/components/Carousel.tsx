@@ -10,8 +10,8 @@ interface CarouselProps {
 
 type SkillType = {
   logo: IconType;
+  id: string;
   name: string;
-  description: string;
   color: string;
 };
 
@@ -24,15 +24,9 @@ const Carousel: React.FC<CarouselProps> = ({ direction, logos }) => {
   return (
     <div className="logo-carousel">
       <div ref={trackRef} className="carousel-track">
-        {items.map(({ color, description, logo, name }, index) => {
+        {items.map(({ color, id, logo, name }, index) => {
           return (
-            <Skill
-              key={index}
-              Logo={logo}
-              description={description}
-              name={name}
-              color={color}
-            />
+            <Skill key={index} id={id} Logo={logo} name={name} color={color} />
           );
         })}
       </div>
