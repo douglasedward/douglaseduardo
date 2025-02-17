@@ -3,7 +3,8 @@ import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
 import useTracking from "@/utils/hooks/useTracking";
-import Language from "./Language";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { createTrackHandler } = useTracking("Header");
@@ -59,7 +60,7 @@ const Header = () => {
               <RiWhatsappFill className="text-white" />
             </a>
           </div>
-          <Language />
+          <LanguageSwitcher />
         </div>
       </div>
     </div>
