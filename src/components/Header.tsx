@@ -3,6 +3,7 @@ import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
 import useTracking from "@/utils/hooks/useTracking";
+import Language from "./Language";
 
 const Header = () => {
   const { createTrackHandler } = useTracking("Header");
@@ -28,8 +29,8 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="flex flex-col w-1/3 items-center justify-center">
-          <div className="divide-x divide-solid divide-white/50 grid grid-cols-3 justify-between w-full xl:w-1/2">
+        <div className="flex w-1/3 items-center justify-center">
+          <div className="hidden md:grid grid-cols-3 justify-between w-full xl:w-1/2 divide-x divide-solid divide-white/50">
             <a
               href="https://linkedin.com/in/douglas-eduardo"
               target="_blank"
@@ -58,6 +59,7 @@ const Header = () => {
               <RiWhatsappFill className="text-white" />
             </a>
           </div>
+          <Language />
         </div>
       </div>
     </div>
