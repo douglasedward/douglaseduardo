@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { IconType } from "react-icons";
+import TechnologyDescription from "./TechnologyDescription";
 
 type SkillProps = {
   Logo: IconType;
+  id: string;
   name: string;
-  description: string;
   color: string;
 };
 
-const Skill = ({ Logo, name, description, color }: SkillProps) => {
+const Skill = ({ Logo, name, id, color }: SkillProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -26,7 +27,7 @@ const Skill = ({ Logo, name, description, color }: SkillProps) => {
             <Logo color={color} size={30} />
             <h3 className="text-lg font-semibold">{name}</h3>
           </div>
-          <p className="text-sm text-slate-300 mt-3">{description}</p>
+          <TechnologyDescription techKey={id} />
         </div>
       </div>
     </div>
