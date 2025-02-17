@@ -1,0 +1,99 @@
+{
+    "about": {
+        "title":"About me",
+        "me": "<p class=\"text-white/70 cursor-default font-Gilmer xl:text-[1.3rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">With over 5 years of experience in software engineering, I specialize in designing scalable backend systems using <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, and NestJS</span>, with expertise in SQL/NoSQL databases and RESTful APIs. I have a strong foundation in <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> for user-centric applications.<br />As a mentor and leader, I foster collaboration and a culture of continuous learning. My experience also includes <span class=\"text-white font-gilmer-medium\">DevOps</span> practices, <span class=\"text-white font-gilmer-medium\">AWS cloud deployment</span>, and implementing robust security measures for reliable, scalable applications. I am driven by innovation and thrive in dynamic, growth-focused environments.</p>"
+    },
+    "download_resume": "Download Resume",
+    "featured_project": "Featured Project",
+    "project_description": "Create stunning visual profiles and build high-quality professional communities and referral networks.",
+    "greetings": "Hi, I'm Douglas",
+    "hero": {
+        "first_line": "Developing Scalable,",
+        "second_line": "Monitored and",
+        "third_line": "Robust webapps."
+    },
+    "contact": {
+        "interested": "Interested?",
+        "get_in_touch": "Let's Get In Touch!",
+        "find_me": "You can find me on",
+        "or_contact_me": "or you can contact me on"
+    },
+    "technologies": {
+      "node": {
+        "description": "JavaScript runtime for building scalable server-side applications."
+      },
+      "typescript": {
+        "description": "Strongly typed superset of JavaScript that compiles to plain JavaScript."
+      },
+      "javascript": {
+        "description": "Versatile programming language for web development."
+      },
+      "python": {
+        "description": "Popular programming language known for simplicity and versatility."
+      },
+      "git": {
+        "description": "Distributed version control system for tracking code changes."
+      },
+      "nestjs": {
+        "description": "Framework for building scalable and maintainable server-side applications."
+      },
+      "express": {
+        "description": "Minimalist web framework for Node.js."
+      },
+      "django": {
+        "description": "High-level Python web framework for building secure and maintainable websites."
+      },
+      "react": {
+        "description": "Library for building interactive user interfaces."
+      },
+      "reactNative": {
+        "description": "Framework for building cross-platform mobile apps using React."
+      },
+      "nextjs": {
+        "description": "React-based framework for server-side rendering and static site generation."
+      },
+      "tailwindcss": {
+        "description": "Utility-first CSS framework for rapid UI development."
+      },
+      "graphql": {
+        "description": "Query language for APIs that enables clients to request only the data they need."
+      },
+      "postgresql": {
+        "description": "Advanced open-source relational database system with robust features."
+      },
+      "mongodb": {
+        "description": "NoSQL database designed for flexibility and scalability."
+      },
+      "rabbitmq": {
+        "description": "Open-source message broker for reliable, scalable messaging between applications."
+      },
+      "kafka": {
+        "description": "Distributed event streaming platform for building real-time data pipelines and streaming applications."
+      },
+      "redis": {
+        "name": "Redis",
+        "description": "In-memory data store used for caching, messaging, and data structures."
+      },
+      "elk": {
+        "description": "A set of tools for searching, analyzing, and visualizing log data in real-time. Includes Elasticsearch, Logstash, and Kibana."
+      },
+      "aws": {
+        "description": "Comprehensive cloud platform offering computing, storage, and more."
+      },
+      "docker": {
+        "description": "Platform for containerizing applications and ensuring consistency across environments."
+      },
+      "kubernetes": {
+        "description": "System for automating deployment, scaling, and management of containerized applications."
+      },
+      "terraform": {
+        "description": "Infrastructure-as-code tool for provisioning and managing cloud resources."
+      },
+      "prometheus": {
+        "description": "Open-source monitoring and alerting toolkit designed for reliability and scalability."
+      },
+      "grafana": {
+        "description": "Open-source platform for monitoring and observability, allowing for real-time analytics and visualization."
+      }
+    }
+  }
