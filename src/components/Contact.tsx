@@ -4,8 +4,10 @@ import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 import useTracking from "@/utils/hooks/useTracking";
 import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { createTrackHandler } = useTracking("Contact");
 
   const handleResumeDownloadClick = createTrackHandler("Resume Button Click");
@@ -22,11 +24,13 @@ const Contact = () => {
         </div>
         <div className="text">
           <h1 className="font-gilmer-heavy sm:text-[3rem] md:text-[3.4rem] text-[2.9rem] lg:text-[4.9rem] xl:text-[6.6rem] leading-[3.5rem] sm:leading-[3.5rem] md:leading-[4rem] lg:leading-[5rem] xl:leading-[6.5rem] 2xl:leading-[7rem] cursor-default">
-            <span className="text-gradient">Interested?</span>
-            <span className="block text-gradient">Let's Get In Touch!</span>
+            <span className="text-gradient">{t("contact.interested")}</span>
+            <span className="block text-gradient">
+              {t("contact.get_in_touch")}
+            </span>
           </h1>
           <p className="text-white/50 cursor-default font-Gilmer sm:mt-10 mt-8 text-base sm:text-lg xl:text-xl 2xl:text-3xl xl:max-w-2xl 2xl:max-w-5xl leading-6">
-            You can find me on{" "}
+            {t("contact.find_me")}{" "}
             <a
               href="https://linkedin.com/in/douglas-eduardo"
               target="_blank"
@@ -36,7 +40,7 @@ const Contact = () => {
             >
               LinkedIn
             </a>{" "}
-            or you can contact me on{" "}
+            {t("contact.or_contact_me")}{" "}
             <a
               href="mailto:douglaskyrius@gmail.com"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
@@ -56,7 +60,7 @@ const Contact = () => {
               className="text-white rounded-full lg:w-fit hover:bg-[#242424] transition duration-500 ease-in-out font-gilmer-bold border-[1px] focus:outline-none flex items-center justify-center gap-x-2 border-white/50 py-3 px-6 text-lg xl:text-xl 2xl:text-2xl my-10 w-full"
             >
               <AiOutlineFilePdf />
-              Download Resume
+              {t("download_resume")}
             </button>
           </a>
         </div>
