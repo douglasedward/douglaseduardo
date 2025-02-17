@@ -2,12 +2,13 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import { SiGithub, SiWhatsapp } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
-import useTracking from "@/utils/hooks/useTracking";
-import DouglasResume from "@/assets/DouglasEduardo_Resume.pdf";
 import { useTranslation } from "react-i18next";
+import useTracking from "@/utils/hooks/useTracking";
+import useResume from "@/utils/hooks/useResume";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const DouglasResume = useResume();
   const { createTrackHandler } = useTracking("Contact");
 
   const handleResumeDownloadClick = createTrackHandler("Resume Button Click");
