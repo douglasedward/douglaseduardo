@@ -10,12 +10,15 @@ import {
 } from "react-icons/si";
 import { GoArrowRight } from "react-icons/go";
 import spectrum from "@/assets/img/spectrum.webp";
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 lg:my-36 my-16 space-y-16">
       <h1 className="text-white/80 font-gilmer-outlined lg:mb-10 mb-5 text-[3.5rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default">
-        Featured Project
+        {t("featured_project")}
       </h1>
 
       <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start">
@@ -33,8 +36,7 @@ const Project = () => {
             </div>
           </h1>
           <p className="font-normal cursor-default font-Gilmer text-white/90 vvs:text-base sm:text-xl xl:text-2xl text-sm lg:text-right">
-            Create stunning visual profiles and build high-quality professional
-            communities and referral networks.
+            {t("project_description")}
           </p>
           <div className="flex justify-start space-x-3 items-center lg:justify-end">
             <SiTypescript className="lg:h-8 lg:w-8 sm:w-7 sm:h-7 h-5 w-5 transition duration-200 ease-in-out text-white/50 hover:text-white" />

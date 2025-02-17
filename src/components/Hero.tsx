@@ -1,6 +1,9 @@
 import profilePic from "@/assets/profile_pic_80q.webp";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="vh-70 flex flex-col items-center justify-center xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10">
       <div className="flex justify-center">
@@ -11,18 +14,18 @@ const Hero = () => {
         />
       </div>
       <p className="font-gilmer-medium cursor-default my-6 lg:text-lg">
-        <span className="text-gradient">Hi, I'm Douglas</span> 👋
+        <span className="text-gradient">{t("greetings")}</span> 👋
       </p>
       <div className="text-center">
         <h1 className="font-gilmer-bold cursor-default text-4xl vvs:text-5xl sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="font-gilmer-outlined">
-            Developing Scalable, <br />
+            {t("hero.first_line")} <br />
           </span>
           <span className="text-gradient">
-            Monitored and
+            {t("hero.second_line")}
             <br />
           </span>
-          <span className="text-gradient">Robust webapps.</span> 🚀
+          <span className="text-gradient">{t("hero.third_line")}</span> 🚀
         </h1>
       </div>
     </div>
