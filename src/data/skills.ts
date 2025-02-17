@@ -4,26 +4,24 @@ import {
   SiTypescript,
   SiNodedotjs,
   SiJavascript,
-  SiPython,
   SiNestjs,
   SiExpress,
   SiElasticstack,
-  SiDjango,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
   SiKubernetes,
-  SiTerraform,
   SiGraphql,
-  SiApachekafka,
   SiPrometheus,
   SiGrafana,
 } from "react-icons/si";
 
 import { DiRedis } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
+import { GoogleCloud } from "@/assets/svg/GoogleCloud";
+import { Bull } from "@/assets/svg/Bull";
 
 const logosRight = [
   {
@@ -45,12 +43,6 @@ const logosRight = [
     color: "#F7DF1E",
   },
   {
-    id: "python",
-    logo: SiPython,
-    name: "Python",
-    color: "#3776AB",
-  },
-  {
     id: "git",
     logo: FaGitAlt,
     name: "Git",
@@ -67,12 +59,6 @@ const logosRight = [
     logo: SiExpress,
     name: "Express",
     color: "#6b7280",
-  },
-  {
-    id: "django",
-    logo: SiDjango,
-    name: "Django",
-    color: "#156848",
   },
   {
     id: "react",
@@ -126,10 +112,10 @@ const logosLeft = [
     color: "#F26722",
   },
   {
-    id: "kafka",
-    logo: SiApachekafka,
-    name: "Kafka",
-    color: "#D9D9D9",
+    id: "bullmq",
+    logo: Bull,
+    name: "BullMQ",
+    color: "#475569",
   },
   {
     id: "redis",
@@ -162,10 +148,10 @@ const logosLeft = [
     color: "#326CE5",
   },
   {
-    id: "terraform",
-    logo: SiTerraform,
-    name: "Terraform",
-    color: "#623CE4",
+    id: "gcp",
+    logo: GoogleCloud,
+    name: "Google Cloud Platform",
+    color: "#4285F4",
   },
   {
     id: "prometheus",

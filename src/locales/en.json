@@ -28,9 +28,6 @@
       "javascript": {
         "description": "Versatile programming language for web development."
       },
-      "python": {
-        "description": "Popular programming language known for simplicity and versatility."
-      },
       "git": {
         "description": "Distributed version control system for tracking code changes."
       },
@@ -39,9 +36,6 @@
       },
       "express": {
         "description": "Minimalist web framework for Node.js."
-      },
-      "django": {
-        "description": "High-level Python web framework for building secure and maintainable websites."
       },
       "react": {
         "description": "Library for building interactive user interfaces."
@@ -67,15 +61,15 @@
       "rabbitmq": {
         "description": "Open-source message broker for reliable, scalable messaging between applications."
       },
-      "kafka": {
-        "description": "Distributed event streaming platform for building real-time data pipelines and streaming applications."
+      "bullmq": {
+        "description": "A Node.js library that implements a fast and robust queue system built on top of Redis."
       },
       "redis": {
         "name": "Redis",
         "description": "In-memory data store used for caching, messaging, and data structures."
       },
       "elk": {
-        "description": "A set of tools for searching, analyzing, and visualizing log data in real-time. Includes Elasticsearch, Logstash, and Kibana."
+        "description": "A set of tools for searching, analyzing, and visualizing log data in real-time."
       },
       "aws": {
         "description": "Comprehensive cloud platform offering computing, storage, and more."
@@ -86,8 +80,8 @@
       "kubernetes": {
         "description": "System for automating deployment, scaling, and management of containerized applications."
       },
-      "terraform": {
-        "description": "Infrastructure-as-code tool for provisioning and managing cloud resources."
+      "gcp": {
+        "description": "Cloud platform offering computing, storage, and more."
       },
       "prometheus": {
         "description": "Open-source monitoring and alerting toolkit designed for reliability and scalability."
