@@ -53,6 +53,7 @@ const Contact = () => {
           </p>
           <a
             href={DouglasResume}
+            target="_blank"
             download={DouglasResume}
             onClick={handleResumeDownloadClick}
           >

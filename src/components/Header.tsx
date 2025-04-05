@@ -22,6 +22,7 @@ const Header = () => {
         <div className="flex items-center gap-x-4">
           <a
             href={DouglasResume}
+            target="_blank"
             download={DouglasResume}
             onClick={handleResumeDownloadClick}
           >
