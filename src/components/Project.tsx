@@ -35,7 +35,7 @@ const Project = () => {
               <p>Spectrum</p>
             </div>
           </h1>
-          <p className="font-normal cursor-default font-Gilmer text-white/90 vvs:text-base sm:text-xl xl:text-2xl text-sm lg:text-right">
+          <p className="font-normal cursor-default font-gilmer-regular text-white/90 vvs:text-base sm:text-xl xl:text-2xl text-sm lg:text-right">
             {t("project_description")}
           </p>
           <div className="flex justify-start space-x-3 items-center lg:justify-end">
