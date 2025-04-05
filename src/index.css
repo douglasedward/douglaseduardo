@@ -5,12 +5,12 @@
 @layer base {
   @font-face {
     font-family: "GilmerLight";
-    src: url("/assets/fonts/GilmerLight.otf") format("opentype");
+    src: url("/src/assets/fonts/GilmerLight.otf") format("opentype");
   }
 
   @font-face {
     font-family: "Gilmer-Regular";
-    src: url("/assets/fonts/GilmerRegular.otf") format("opentype");
+    src: url("/src/assets/fonts/GilmerRegular.otf") format("opentype");
   }
 
   @font-face {
@@ -99,10 +99,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.font-Gilmer {
-  font-family: "Gilmer", sans-serif;
 }
 
 a {

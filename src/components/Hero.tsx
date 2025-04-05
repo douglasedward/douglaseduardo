@@ -1,4 +1,3 @@
-import profilePic from "@/assets/profile_pic_80q.webp";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -8,7 +7,7 @@ const Hero = () => {
     <div className="vh-70 flex flex-col items-center justify-center xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10">
       <div className="flex justify-center">
         <img
-          src={profilePic}
+          src="https://dte4lj9t9uodb.cloudfront.net/profile_pic_80q.webp"
           className="rounded-full !z-10 lg:h-44 lg:w-44 h-28 w-28 hover:scale-[1.05] hover:-rotate-12 transition-filter hover:drop-shadow-[0_0_2em_rgba(190,190,190,0.67)] duration-300 ease-in-out cursor-pointer"
           alt="Douglas Eduardo"
         />
