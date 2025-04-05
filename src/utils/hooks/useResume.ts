@@ -2,25 +2,17 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const useResume = () => {
-  const [DouglasResume, setDouglasResume] = useState<string | undefined>(
-    undefined
-  );
+  const [DouglasResume, setDouglasResume] = useState<string>("");
   const {
     i18n: { language },
   } = useTranslation();
 
   useEffect(() => {
-    const loadResume = async () => {
-      let resume;
-      if (language === "pt") {
-        resume = await import("@/assets/DouglasEduardo_pt-BR.pdf");
-      } else {
-        resume = await import("@/assets/DouglasEduardo_en-US.pdf");
-      }
-      setDouglasResume(resume.default); // `default` contains the resolved path from dynamic import
-    };
-
-    loadResume();
+    setDouglasResume(
+      language === "pt"
+        ? "https://dte4lj9t9uodb.cloudfront.net/DouglasResume_pt-BR.pdf"
+        : "https://dte4lj9t9uodb.cloudfront.net/DouglasResume_en-US.pdf"
+    );
   }, [language]);
 
   return DouglasResume;

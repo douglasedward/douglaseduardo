@@ -24,7 +24,7 @@ const Project = () => {
       <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start">
         <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full">
           <img
-            src={spectrum}
+            src="https://dte4lj9t9uodb.cloudfront.net/spectrum.webp"
             alt="spectrum project image"
             className="w-full object-cover h-full"
           />
