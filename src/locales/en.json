@@ -4,8 +4,9 @@
         "me": "<p class=\"text-white/75 cursor-default font-gilmer-regular vvs:text-base sm:text-xl xl:text-2xl text-sm xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">With over 4 years of experience in software development, I specialize in designing scalable systems using <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, and NestJS</span>, with expertise in SQL/NoSQL databases and RESTful APIs. I have a strong foundation in <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> for user-centric applications.<br /><br />As a mentor and leader, I foster collaboration and a culture of continuous learning. My experience also includes <span class=\"text-white font-gilmer-medium\">DevOps</span> practices, <span class=\"text-white font-gilmer-medium\">AWS cloud deployment</span>, and implementing robust security measures for reliable, scalable applications. I am driven by innovation and thrive in dynamic, growth-focused environments.</p>"
     },
     "download_resume": "Download Resume",
-    "featured_project": "Featured Project",
-    "project_description": "Create stunning visual profiles and build high-quality professional communities and referral networks.",
+    "featured_project": "Featured Projects",
+    "spectrum_description": "Create stunning visual profiles and build high-quality professional communities and referral networks.",
+    "rentify_description": "A modern real estate management platform that connects property managers with potential tenants.",
     "greetings": "Hi, I'm Douglas",
     "hero": {
         "first_line": "Developing Scalable,",
