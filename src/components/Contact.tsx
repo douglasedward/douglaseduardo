@@ -33,7 +33,7 @@ const Contact = () => {
           <p className="text-white/50 cursor-default font-gilmer-regular sm:mt-10 mt-8 text-base sm:text-lg xl:text-xl 2xl:text-3xl xl:max-w-2xl 2xl:max-w-5xl leading-6">
             {t("contact.find_me")}{" "}
             <a
-              href="https://linkedin.com/in/douglas-eduardo"
+              href="https://linkedin.com/in/douglas-eduardo-761478362"
               target="_blank"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
               rel="noreferrer"
@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="flex flex-col py-2 mb-5 w-full space-y-6 items-center justify-center">
           <div className="divide-x divide-solid divide-white/50 grid grid-cols-3 w-full">
             <a
-              href="https://linkedin.com/in/douglas-eduardo"
+              href="https://linkedin.com/in/douglas-eduardo-761478362"
               target="_blank"
               className="flex items-center justify-center flex-col text-lg text-white"
               rel="noreferrer"
