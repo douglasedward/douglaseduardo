@@ -43,11 +43,11 @@ const Contact = () => {
             </a>{" "}
             {t("contact.or_contact_me")}{" "}
             <a
-              href="mailto:douglaskyrius@gmail.com"
+              href="mailto:devdouglaseduardo@gmail.com"
               className="text-white font-gilmer-medium transition duration-200 ease-in-out"
               onClick={handleEmailClick}
             >
-              douglaskyrius@gmail.com
+              devdouglaseduardo@gmail.com
             </a>
             .
           </p>
