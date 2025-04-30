@@ -26,7 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({ direction, logos }) => {
       <div ref={trackRef} className="carousel-track">
         {items.map(({ color, id, logo, name }, index) => {
           return (
-            <Skill key={index} id={id} Logo={logo} name={name} color={color} />
+            <Skill key={index} id={id} logo={logo} name={name} color={color} />
           );
         })}
       </div>

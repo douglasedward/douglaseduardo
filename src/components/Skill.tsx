@@ -3,13 +3,13 @@ import { IconType } from "react-icons";
 import TechnologyDescription from "./TechnologyDescription";
 
 type SkillProps = {
-  Logo: IconType;
+  logo: IconType;
   id: string;
   name: string;
   color: string;
 };
 
-const Skill = ({ Logo, name, id, color }: SkillProps) => {
+const Skill = ({ logo: Logo, name, id, color }: SkillProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (

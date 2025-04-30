@@ -1,7 +1,7 @@
 {
     "about": {
         "title": "Sobre mim",
-        "me": "<p class=\"text-white/75 cursor-default font-gilmer-regular vvs:text-base sm:text-xl xl:text-2xl text-sm xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">Com mais de 4 anos de experiência em desenvolvimento de software, sou especializado no design de sistemas backend escaláveis utilizando <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, e NestJS</span>, com expertise em bancos de dados SQL/NoSQL e APIs RESTful. Tenho uma base sólida em <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> para aplicações centradas no usuário.<br /><br />Como mentor e líder, incentivo a colaboração e uma cultura de aprendizado contínuo. Minha experiência também abrange práticas de <span class=\"text-white font-gilmer-medium\">DevOps</span>, deploy na nuvem <span class=\"text-white font-gilmer-medium\">AWS</span>, e implementação de medidas de segurança robustas para aplicações confiáveis e escaláveis. Sou movido pela inovação e prospero em ambientes dinâmicos e voltados para o crescimento.</p>"
+        "me": "<p class=\"text-white/75 cursor-default font-gilmer-regular vvs:text-base sm:text-xl xl:text-2xl text-sm xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">Com mais de 4 anos de experiência em desenvolvimento de software, trabalho com projetos de sistemas utilizando <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, e NestJS</span>, além de bancos de dados SQL/NoSQL e APIs REST/GraphQL. Tenho uma base sólida em <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> para aplicações centradas no usuário.<br /><br />Minha experiência também abrange práticas de <span class=\"text-white font-gilmer-medium\">DevOps</span>, deploy na nuvem <span class=\"text-white font-gilmer-medium\">AWS</span>, e implementação de medidas de segurança robustas para aplicações confiáveis e escaláveis. Sou movido pela inovação e prospero em ambientes dinâmicos e voltados para o crescimento.</p>"
     },
     "download_resume": "Baixar Currículo",
     "featured_project": "Projetos em Destaque",
@@ -59,29 +59,20 @@
     "mongodb": {
       "description": "Banco de dados NoSQL projetado para flexibilidade e escalabilidade."
     },
-    "rabbitmq": {
-      "description": "Broker de mensagens open-source para comunicação confiável e escalável entre aplicações."
-    },
     "bullmq": {
       "description": "Uma biblioteca Node.js que implementa um sistema de filas rápido e robusto, construído sob o Redis."
     },
     "redis": {
       "description": "Armazenamento de dados em memória utilizado para cache, mensageria e estruturas de dados."
     },
-    "elk": {
-      "description": "Conjunto de ferramentas para busca, análise e visualização de logs em tempo real."
+    "elasticsearch": {
+      "description": "Motor de busca e análise distribuído, baseado em Lucene, para dados estruturados e não estruturados."
     },
     "aws": {
       "description": "Plataforma completa de cloud que oferece computação, armazenamento e diversos serviços."
     },
     "docker": {
       "description": "Plataforma para conteinerização de aplicações, garantindo consistência entre ambientes."
-    },
-    "kubernetes": {
-      "description": "Sistema para automatizar deploy, escalonamento e gerenciamento de aplicações conteinerizadas."
-    },
-    "gcp": {
-      "description": "Plataforma de nuvem que oferece serviços de computação, armazenamento, e entre outros."
     },
     "prometheus": {
       "description": "Kit de ferramentas open-source para monitoramento e alertas, projetado para confiabilidade e escalabilidade."

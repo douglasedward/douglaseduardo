@@ -1,7 +1,7 @@
 {
     "about": {
         "title":"About me",
-        "me": "<p class=\"text-white/75 cursor-default font-gilmer-regular vvs:text-base sm:text-xl xl:text-2xl text-sm xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">With over 4 years of experience in software development, I specialize in designing scalable systems using <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, and NestJS</span>, with expertise in SQL/NoSQL databases and RESTful APIs. I have a strong foundation in <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> for user-centric applications.<br /><br />As a mentor and leader, I foster collaboration and a culture of continuous learning. My experience also includes <span class=\"text-white font-gilmer-medium\">DevOps</span> practices, <span class=\"text-white font-gilmer-medium\">AWS cloud deployment</span>, and implementing robust security measures for reliable, scalable applications. I am driven by innovation and thrive in dynamic, growth-focused environments.</p>"
+        "me": "<p class=\"text-white/75 cursor-default font-gilmer-regular vvs:text-base sm:text-xl xl:text-2xl text-sm xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0\">With over 4 years of experience in software development, I work on systems projects using <span class=\"text-white font-gilmer-medium\">Node.js, TypeScript, Express, and NestJS</span>, as well as SQL/NoSQL databases and REST/GraphQL APIs. I have a strong foundation in <span class=\"text-white font-gilmer-medium\">React/Next.js, React Native</span> for user-centric applications.<br /><br />My experience also includes <span class=\"text-white font-gilmer-medium\">DevOps</span> practices, <span class=\"text-white font-gilmer-medium\">AWS cloud deployment</span>, and implementing robust security measures for reliable, scalable applications. I am driven by innovation and thrive in dynamic, growth-focused environments.</p>"
     },
     "download_resume": "Download Resume",
     "featured_project": "Featured Projects",
@@ -59,9 +59,6 @@
       "mongodb": {
         "description": "NoSQL database designed for flexibility and scalability."
       },
-      "rabbitmq": {
-        "description": "Open-source message broker for reliable, scalable messaging between applications."
-      },
       "bullmq": {
         "description": "A Node.js library that implements a fast and robust queue system built on top of Redis."
       },
@@ -69,20 +66,14 @@
         "name": "Redis",
         "description": "In-memory data store used for caching, messaging, and data structures."
       },
-      "elk": {
-        "description": "A set of tools for searching, analyzing, and visualizing log data in real-time."
+      "elasticsearch": {
+        "description": "Distributed search and analytics engine based on Lucene for structured and unstructured data."
       },
       "aws": {
         "description": "Comprehensive cloud platform offering computing, storage, and more."
       },
       "docker": {
         "description": "Platform for containerizing applications and ensuring consistency across environments."
-      },
-      "kubernetes": {
-        "description": "System for automating deployment, scaling, and management of containerized applications."
-      },
-      "gcp": {
-        "description": "Cloud platform offering computing, storage, and more."
       },
       "prometheus": {
         "description": "Open-source monitoring and alerting toolkit designed for reliability and scalability."

@@ -10,8 +10,8 @@ const useResume = () => {
   useEffect(() => {
     setDouglasResume(
       language === "pt"
-        ? "https://dte4lj9t9uodb.cloudfront.net/DouglasResume_pt-BR.pdf"
-        : "https://dte4lj9t9uodb.cloudfront.net/DouglasResume_en-US.pdf"
+        ? "https://rentify-s3-photos.s3.sa-east-1.amazonaws.com/DouglasResume.pdf"
+        : "https://rentify-s3-photos.s3.sa-east-1.amazonaws.com/DouglasResumeEN.pdf"
     );
   }, [language]);
 

@@ -36,7 +36,7 @@ const Header = () => {
         <div className="flex w-1/2 lg:w-1/3 items-center justify-end">
           <div className="hidden md:grid grid-cols-3 justify-between w-full xl:w-1/2 divide-x divide-solid divide-white/50">
             <a
-              href="https://linkedin.com/in/douglas-eduardo"
+              href="https://linkedin.com/in/douglas-eduardo-761478362"
               target="_blank"
               rel="noreferrer"
               className="flex items-center justify-center flex-col text-lg transition-filter hover:drop-shadow-[0_0_1em_rgba(100,108,255,0.67)] duration-300 ease-in-out"
