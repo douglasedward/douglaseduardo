@@ -1,18 +1,16 @@
 import { FaAws, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
-  SiRabbitmq,
   SiTypescript,
   SiNodedotjs,
   SiJavascript,
   SiNestjs,
   SiExpress,
-  SiElasticstack,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
-  SiKubernetes,
+  SiElasticsearch,
   SiGraphql,
   SiPrometheus,
   SiGrafana,
@@ -20,7 +18,6 @@ import {
 
 import { DiRedis } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
-import { GoogleCloud } from "@/assets/svg/GoogleCloud";
 import { Bull } from "@/assets/svg/Bull";
 
 const logosRight = [
@@ -106,12 +103,6 @@ const logosLeft = [
     color: "#47A248",
   },
   {
-    id: "rabbitmq",
-    logo: SiRabbitmq,
-    name: "RabbitMQ",
-    color: "#F26722",
-  },
-  {
     id: "bullmq",
     logo: Bull,
     name: "BullMQ",
@@ -124,9 +115,9 @@ const logosLeft = [
     color: "#DC382D",
   },
   {
-    id: "elk",
-    logo: SiElasticstack,
-    name: "ELK Stack",
+    id: "elasticsearch",
+    logo: SiElasticsearch,
+    name: "Elasticsearch",
     color: "#005571",
   },
   {
@@ -140,18 +131,6 @@ const logosLeft = [
     logo: FaDocker,
     name: "Docker",
     color: "#2496ED",
-  },
-  {
-    id: "kubernetes",
-    logo: SiKubernetes,
-    name: "Kubernetes",
-    color: "#326CE5",
-  },
-  {
-    id: "gcp",
-    logo: GoogleCloud,
-    name: "Google Cloud Platform",
-    color: "#4285F4",
   },
   {
     id: "prometheus",

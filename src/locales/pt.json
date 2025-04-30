@@ -59,29 +59,20 @@
     "mongodb": {
       "description": "Banco de dados NoSQL projetado para flexibilidade e escalabilidade."
     },
-    "rabbitmq": {
-      "description": "Broker de mensagens open-source para comunicação confiável e escalável entre aplicações."
-    },
     "bullmq": {
       "description": "Uma biblioteca Node.js que implementa um sistema de filas rápido e robusto, construído sob o Redis."
     },
     "redis": {
       "description": "Armazenamento de dados em memória utilizado para cache, mensageria e estruturas de dados."
     },
-    "elk": {
-      "description": "Conjunto de ferramentas para busca, análise e visualização de logs em tempo real."
+    "elasticsearch": {
+      "description": "Motor de busca e análise distribuído, baseado em Lucene, para dados estruturados e não estruturados."
     },
     "aws": {
       "description": "Plataforma completa de cloud que oferece computação, armazenamento e diversos serviços."
     },
     "docker": {
       "description": "Plataforma para conteinerização de aplicações, garantindo consistência entre ambientes."
-    },
-    "kubernetes": {
-      "description": "Sistema para automatizar deploy, escalonamento e gerenciamento de aplicações conteinerizadas."
-    },
-    "gcp": {
-      "description": "Plataforma de nuvem que oferece serviços de computação, armazenamento, e entre outros."
     },
     "prometheus": {
       "description": "Kit de ferramentas open-source para monitoramento e alertas, projetado para confiabilidade e escalabilidade."
